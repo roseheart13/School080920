@@ -5,22 +5,22 @@
 
 int main()
 {
-    int option = 0;
+    char option = 0;
 
     while (true) {
-        std::cout << "1. Save the game" << std::endl;
-        std::cout << "2. Restart teh game" << std::endl;
-        std::cout << "3. Select difficulty" << std::endl;
+        std::cout << "A. Save the game" << std::endl;
+        std::cout << "B. Restart teh game" << std::endl;
+        std::cout << "C. Select difficulty" << std::endl;
         std::cout << "  Select an option: ";
         std::cin >> option;
 
-        if (option == 1) {
+        if (option == 'A' or option == 'a') {
             std::cout << "Saving ..." << std::endl;
         }
-        else if (option == 2) {
+        else if (option == 'B' or option == 'b') {
             std::cout << " reastarting the game ..." << std::endl;
         }
-        else if (option == 3) {
+        else if (option == 'C' or option == 'c') {
             std::cout << " Please select difficulty (easy/hard)" << std::endl;
         }
         else {
